@@ -36,6 +36,23 @@ const QNA_CATEGORY_LABEL = { team: "팀원 모집", question: "공모전 Q&A", t
 const QNA_NICK_KEY = "knu_square_nickname_v1";
 const QNA_CONTACT = /^[^\s@<>"']+@[^\s@<>"']+\.[a-z]{2,}$/i.test(String(QNA_CFG.contactEmail || "")) ? String(QNA_CFG.contactEmail) : "";
 
+// 인증코드를 보낸 메일 주소를 1시간 동안 기억 (탭을 닫았다 열어도 코드 입력 화면으로 복귀)
+const QNA_PENDING_KEY = "knu_square_pending_v1";
+function qnaSavePending(email) {
+  try {
+    if (email) localStorage.setItem(QNA_PENDING_KEY, JSON.stringify({ email, at: Date.now() }));
+    else localStorage.removeItem(QNA_PENDING_KEY);
+  } catch (e) {}
+}
+function qnaLoadPending() {
+  try {
+    const p = JSON.parse(localStorage.getItem(QNA_PENDING_KEY) || "null");
+    if (p && typeof p.email === "string" && /@knu\.ac\.kr$/.test(p.email) && Date.now() - p.at < 3600000) return p.email;
+  } catch (e) {}
+  qnaSavePending("");
+  return "";
+}
+
 // 신고 메일 링크 (연락처가 설정된 경우에만)
 function qnaReportHref(kind, id, title) {
   if (!QNA_CONTACT) return "";
@@ -51,8 +68,8 @@ const qna = {
   loadError: "",
   posts: [],
   stats: null,
-  step: "email",          // "email" | "code"
-  pendingEmail: "",
+  step: "email",          // "email" | "code" (아래에서 기억된 주소가 있으면 "code")
+  pendingEmail: qnaLoadPending(),
   authMsg: "",
   authErr: "",
   busy: false,
@@ -60,6 +77,7 @@ const qna = {
   openOnly: false,
   consent: false          // 개인정보 수집·이용 동의 체크 여부
 };
+if (qna.pendingEmail) qna.step = "code";
 
 function qnaUserEmail() {
   return (qna.session && qna.session.user && qna.session.user.email) || "";
@@ -430,6 +448,7 @@ async function qnaSendCode(email) {
   } else {
     qna.pendingEmail = email;
     qna.step = "code";
+    qnaSavePending(email);
     qna.resendAt = Date.now() + 60000;
     qna.authMsg = "인증코드를 보냈습니다.";
     qnaTickCooldown();
@@ -486,6 +505,7 @@ async function qnaAction(act, id) {
   if (act === "reload") return qnaLoadPosts();
   if (act === "change-email") {
     qna.step = "email"; qna.authErr = ""; qna.authMsg = "";
+    qnaSavePending("");
     return qnaRerender();
   }
   if (act === "resend") {
@@ -700,6 +720,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // 콜백 안에서 Supabase를 바로 호출하면 교착될 수 있어 다음 틱에 실행
     if (session) {
       qna.step = "email"; qna.authErr = ""; qna.authMsg = "";
+      qnaSavePending("");
       if (!wasIn || event === "SIGNED_IN") setTimeout(() => qnaLoadPosts().then(qnaRefreshIcons), 0);
     } else {
       qna.posts = [];

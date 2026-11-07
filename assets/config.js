@@ -12,5 +12,5 @@
 window.KNU_SQUARE_CONFIG = {
   supabaseUrl: "https://swzmdqaoqdrtbiupedbp.supabase.co",
   supabaseAnonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN3em1kcWFvcWRydGJpdXBlZGJwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQwMzk1MDgsImV4cCI6MjEwOTYxNTUwOH0.LJeUcbwDRxAwA_5OGvvUJ0TP4vJHgRCxr1mGVC48wRs",
-  contactEmail: "hagseong12@gmail.com"
+  contactEmail: "knugongmo@gmail.com"
 };

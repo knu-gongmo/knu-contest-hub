@@ -92,6 +92,7 @@ function qnaErrorText(error) {
   if (/expired|invalid/i.test(msg)) return "인증코드가 틀렸거나 만료되었습니다. 다시 확인해주세요.";
   if (/violates check constraint/i.test(msg)) return "입력 길이를 확인해주세요.";
   if (/Failed to fetch|NetworkError/i.test(msg)) return "서버에 연결하지 못했습니다. 네트워크를 확인해주세요.";
+  if (/sending (confirmation|magic link)|send.*email|smtp/i.test(msg)) return "인증 메일을 보내지 못했습니다. 사이트 메일 발송 설정 문제일 수 있으니 잠시 후 다시 시도하거나 운영자에게 알려주세요.";
   return "처리 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.";
 }
 

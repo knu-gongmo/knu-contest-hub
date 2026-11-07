@@ -13,6 +13,7 @@
 
 import argparse
 import datetime
+import hashlib
 import json
 import os
 import re
@@ -24,6 +25,28 @@ import requests
 from bs4 import BeautifulSoup
 
 KST = datetime.timezone(datetime.timedelta(hours=9))
+
+# 보안: 사이트에 노출할 링크는 아래 도메인의 http(s) 주소만 허용
+ALLOWED_LINK_HOSTS = ("knu.ac.kr", "aerodrone.ac.kr")
+# 마감 후 이 일수가 지난 공고는 JSON에서 제거 (파일 무한 증가 방지)
+EXPIRED_RETENTION_DAYS = 30
+MAX_ITEMS = 300
+
+
+def stable_hash(text: str, length: int = 7) -> str:
+    """실행마다 달라지는 내장 hash() 대신 결정적 해시 사용 (중복 id 방지)."""
+    return str(int(hashlib.sha1(text.encode("utf-8")).hexdigest(), 16))[:length]
+
+
+def is_allowed_link(url: str) -> bool:
+    try:
+        parsed = urlparse(url)
+    except ValueError:
+        return False
+    host = (parsed.hostname or "").lower()
+    return parsed.scheme in ("http", "https") and any(
+        host == h or host.endswith("." + h) for h in ALLOWED_LINK_HOSTS
+    )
 
 # ---------------------------------------------------------------------------
 # 1. 키워드 필터 및 3대 독립 유형(contest / event / campaign) 자동 분류 규칙
@@ -432,7 +455,7 @@ def parse_knu_wbbs(html: str, source: Dict) -> List[Dict]:
             parsed_q.get("btin.doc_no", [None])[0]
             or parsed_q.get("doc_no", [None])[0]
             or re.sub(r"\D", "", href)[-7:]
-            or str(abs(hash(title)))[:7]
+            or stable_hash(title, 7)
         )
 
         row_text = row.get_text(" ", strip=True)
@@ -486,7 +509,7 @@ def parse_knu_see(html: str, source: Dict) -> List[Dict]:
             continue
 
         fidx_match = re.search(r"fidx=(\d+)", href)
-        fidx = fidx_match.group(1) if fidx_match else str(abs(hash(title)))[:6]
+        fidx = fidx_match.group(1) if fidx_match else stable_hash(title, 6)
         if fidx in seen_ids:
             continue
         seen_ids.add(fidx)
@@ -566,20 +589,31 @@ def run_crawler(output_path: str = "data/competitions.json", dry_run: bool = Fal
             print(f"  └─ 본문 정밀 분석 완료 게시글: {len(fetched)}건")
 
             for item in fetched:
+                if not is_allowed_link(item.get("url", "")):
+                    print(f"  └─ [SKIP] 허용되지 않은 링크: {item.get('url')!r}")
+                    continue
                 existing_items[item["id"]] = item
                 new_or_updated += 1
             time.sleep(0.6)
         except Exception as exc:
             print(f"  └─ [ERROR] {src['subOrg']} 수집 중 오류: {exc}")
 
+    cutoff = (get_today_kst() - datetime.timedelta(days=EXPIRED_RETENTION_DAYS)).isoformat()
+    kept = [
+        it for it in existing_items.values()
+        if it.get("deadline", "9999-12-31") >= cutoff and is_allowed_link(it.get("url", ""))
+    ]
+
     all_items = sorted(
-        existing_items.values(),
+        kept,
         key=lambda x: (
             0 if x.get("deadline", "0000-00-00") >= today_str else 1,
             x.get("deadline", "9999-12-31"),
             x.get("postedDate", "")
         ),
     )
+
+    all_items = all_items[:MAX_ITEMS]
 
     payload = {
         "lastUpdated": datetime.datetime.now(KST).strftime("%Y-%m-%d %H:%M:%S KST"),
@@ -589,8 +623,11 @@ def run_crawler(output_path: str = "data/competitions.json", dry_run: bool = Fal
         "items": all_items,
     }
 
-    with open(output_path, "w", encoding="utf-8") as f:
+    # 임시 파일에 쓴 뒤 교체 → 중간에 실패해도 기존 JSON이 깨지지 않음
+    tmp_path = output_path + ".tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
+    os.replace(tmp_path, output_path)
 
     print(f"[DONE] 기준일({today_str}) 총 {len(all_items)}건 저장 완료 -> {output_path}")
     return payload

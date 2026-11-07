@@ -1,0 +1,70 @@
+name: KNU Contest Daily Crawler
+
+on:
+  schedule:
+    # 매일 오전 09:00 KST (UTC 00:00) 자동 실행
+    - cron: '0 0 * * *'
+  workflow_dispatch: # GitHub 웹 화면에서 언제든 수동 실행 가능
+
+# 최소 권한: 데이터 파일 커밋에 필요한 contents 쓰기 권한만 부여
+permissions:
+  contents: write
+
+# 수동 실행과 예약 실행이 겹쳐 push 충돌이 나지 않도록 직렬화
+concurrency:
+  group: daily-crawl
+  cancel-in-progress: false
+
+jobs:
+  crawl-and-update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 3.11 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 크롤러 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: 경북대 8개 기관 게시판 크롤링 실행
+        run: python knu_crawler.py --output data/competitions.json
+
+      - name: Q&A 게시판(Supabase) 무료 플랜 일시정지 방지 핑
+        continue-on-error: true
+        run: |
+          python - <<'PY'
+          import re, json, urllib.request
+          src = open("assets/config.js", encoding="utf-8").read()
+          url = re.search(r'supabaseUrl:\s*"([^"]*)"', src)
+          key = re.search(r'supabaseAnonKey:\s*"([^"]*)"', src)
+          if not (url and key and url.group(1) and key.group(1)):
+              print("Supabase 미설정 - 건너뜀")
+          else:
+              headers = {"apikey": key.group(1), "Content-Type": "application/json"}
+              if key.group(1).startswith("eyJ"):  # 구형 JWT anon 키만 Bearer로 전달
+                  headers["Authorization"] = "Bearer " + key.group(1)
+              req = urllib.request.Request(
+                  url.group(1).rstrip("/") + "/rest/v1/rpc/qna_public_stats",
+                  data=b"{}", method="POST", headers=headers,
+              )
+              print(urllib.request.urlopen(req, timeout=20).read().decode())
+          PY
+
+      - name: 변경된 공모전 데이터 자동 커밋 및 푸시 (웹사이트 자동 업데이트)
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/competitions.json
+          if git diff --staged --quiet; then
+            echo "변경 없음"
+            exit 0
+          fi
+          git commit -m "chore(data): 일일 경북대 공모전 자동 업데이트 $(TZ=Asia/Seoul date +'%Y-%m-%d')"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push

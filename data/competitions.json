@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-11-09 12:26:53 KST",
-  "referenceToday": "2026-11-09",
-  "totalCount": 31,
-  "newOrUpdatedCount": 0,
+  "lastUpdated": "2026-11-10 14:00:31 KST",
+  "referenceToday": "2026-11-10",
+  "totalCount": 33,
+  "newOrUpdatedCount": 5,
   "items": [
     {
       "id": "knucube_mentor_2026",
@@ -373,7 +373,7 @@
         "11월19일마감"
       ],
       "summary": "경북대 대학공지 공지 (2026-11-05 게시).",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "robot_bootcamp_2026",
@@ -452,7 +452,7 @@
         "11월20일마감"
       ],
       "summary": "경북대 대학공지 공지 (2026-11-06 게시).",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "knu_festa_2026",
@@ -479,6 +479,56 @@
         "개교80주년"
       ],
       "summary": "[본문 분석 완료] 2026-11-04 게시(doc_no=1338715). 11월 한 달간 AX 시대 교수회 포럼(11.12), 신기술 신산업 AI 토크 콘서트(11.23), 연구실안전 페스티벌(11.24), 캡스톤 전시(11.26)가 이어집니다.",
+      "isNew": true
+    },
+    {
+      "id": "knu_main_1338739",
+      "itemType": "event",
+      "title": "[대학원혁신]경북대학교 대학원 직무 박람회",
+      "orgId": "knu_main",
+      "orgName": "대학본부·학생처",
+      "subOrg": "경북대 대학공지",
+      "category": "event",
+      "categoryName": "교내행사·특강·페스티벌",
+      "postedDate": "2026-11-09",
+      "postedTime": "2026-11-09",
+      "boardPeriod": "",
+      "deadline": "2026-11-23",
+      "deadlineTime": "18:00",
+      "scheduleDetail": "등록일(2026-11-09) 기준 안내 공고",
+      "eligibility": "경북대학교 재학생 (상세 요강 원문 참조)",
+      "benefit": "원문 공고문 시상 내역 및 지원 혜택 참조",
+      "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=&btin.bbs_cde=&btin.doc_no=1338739&btin.appl_no=000000&btin.page=/>&btin.search_type=&btin.search_text=&popupDeco=&btin.note_div=row&menu_idx=67",
+      "tags": [
+        "대학원혁신",
+        "11월23일마감"
+      ],
+      "summary": "경북대 대학공지 공지 (2026-11-09 게시).",
+      "isNew": true
+    },
+    {
+      "id": "knu_main_1338737",
+      "itemType": "contest",
+      "title": "[교수학습센터] 제20회 별빛수기 공모전(다시 듣고 싶은 수업 에세이/숏폼 공모전) 안내",
+      "orgId": "knu_main",
+      "orgName": "대학본부·학생처",
+      "subOrg": "경북대 대학공지",
+      "category": "global",
+      "categoryName": "글로벌·대외활동",
+      "postedDate": "2026-11-09",
+      "postedTime": "2026-11-09",
+      "boardPeriod": "",
+      "deadline": "2026-11-23",
+      "deadlineTime": "18:00",
+      "scheduleDetail": "등록일(2026-11-09) 기준 안내 공고",
+      "eligibility": "경북대학교 재학생 (상세 요강 원문 참조)",
+      "benefit": "원문 공고문 시상 내역 및 지원 혜택 참조",
+      "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=&btin.bbs_cde=&btin.doc_no=1338737&btin.appl_no=000000&btin.page=/>&btin.search_type=&btin.search_text=&popupDeco=&btin.note_div=row&menu_idx=67",
+      "tags": [
+        "교수학습센터",
+        "11월23일마감"
+      ],
+      "summary": "경북대 대학공지 공지 (2026-11-09 게시).",
       "isNew": true
     },
     {

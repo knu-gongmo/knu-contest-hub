@@ -1,36 +1,9 @@
 {
-  "lastUpdated": "2026-11-10 14:00:31 KST",
-  "referenceToday": "2026-11-10",
+  "lastUpdated": "2026-11-11 12:34:12 KST",
+  "referenceToday": "2026-11-11",
   "totalCount": 33,
-  "newOrUpdatedCount": 5,
+  "newOrUpdatedCount": 0,
   "items": [
-    {
-      "id": "knucube_mentor_2026",
-      "itemType": "event",
-      "title": "[진로취업과] 2026 동문선배 멘토링 「커넥트」 Part 2 공기업 현직자 멘토링 데이",
-      "orgId": "knucube",
-      "orgName": "진로취업·도서관·CUBE",
-      "subOrg": "학생처 진로취업과 · KNUCUBE",
-      "category": "event",
-      "categoryName": "교내행사·특강·페스티벌",
-      "postedDate": "2026-10-12",
-      "postedTime": "2026-10-12 11:04",
-      "boardPeriod": "2026-10-12 ~ 2026-11-30",
-      "deadline": "2026-11-10",
-      "deadlineTime": "18:00",
-      "scheduleDetail": "매주 화요일 진행: 6회차(11/3 완료) → 7회차(11/10) → 8회차(11/17) → 9회차(11/24) → 10회차(12/1)",
-      "eligibility": "공기업·금융권 취업 희망 경북대 재학생 및 휴학생",
-      "benefit": "국민연금공단·한수원·서울교통공사·가스공사·신보·캠코·IBK·한국은행 동문 선배 직무 멘토링",
-      "url": "https://knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=1&btin.bbs_cde=1&btin.doc_no=1338528&btin.appl_no=000000&menu_idx=67",
-      "tags": [
-        "공기업멘토링",
-        "한수원·한국은행",
-        "매주화요일",
-        "11월10일7회차"
-      ],
-      "summary": "[본문 분석 완료] 2026-10-12 11:04 게시(doc_no=1338528). 매주 화요일 진행되는 릴레이 동문 멘토링으로 어제 6회차(11/3)가 진행되었으며, 다가오는 7회차(11/10)~10회차(12/1)를 KNUCUBE에서 접수 중입니다.",
-      "isNew": false
-    },
     {
       "id": "see_mentor_105725",
       "itemType": "event",
@@ -881,6 +854,33 @@
       ],
       "summary": "[본문 분석 완료] 2026-11-04 10:28 게시(doc_no=1338711). 학교생활 전반 설문조사(20명) 및 개선 보고서를 작성하는 캠퍼스 모니터링 활동입니다. 붙임 문서상의 11.11은 단과대 제출일이며 학생은 11.06(금) 18:00까지 학과로 제출해야 합니다.",
       "isNew": true
+    },
+    {
+      "id": "knucube_mentor_2026",
+      "itemType": "event",
+      "title": "[진로취업과] 2026 동문선배 멘토링 「커넥트」 Part 2 공기업 현직자 멘토링 데이",
+      "orgId": "knucube",
+      "orgName": "진로취업·도서관·CUBE",
+      "subOrg": "학생처 진로취업과 · KNUCUBE",
+      "category": "event",
+      "categoryName": "교내행사·특강·페스티벌",
+      "postedDate": "2026-10-12",
+      "postedTime": "2026-10-12 11:04",
+      "boardPeriod": "2026-10-12 ~ 2026-11-30",
+      "deadline": "2026-11-10",
+      "deadlineTime": "18:00",
+      "scheduleDetail": "매주 화요일 진행: 6회차(11/3 완료) → 7회차(11/10) → 8회차(11/17) → 9회차(11/24) → 10회차(12/1)",
+      "eligibility": "공기업·금융권 취업 희망 경북대 재학생 및 휴학생",
+      "benefit": "국민연금공단·한수원·서울교통공사·가스공사·신보·캠코·IBK·한국은행 동문 선배 직무 멘토링",
+      "url": "https://knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=1&btin.bbs_cde=1&btin.doc_no=1338528&btin.appl_no=000000&menu_idx=67",
+      "tags": [
+        "공기업멘토링",
+        "한수원·한국은행",
+        "매주화요일",
+        "11월10일7회차"
+      ],
+      "summary": "[본문 분석 완료] 2026-10-12 11:04 게시(doc_no=1338528). 매주 화요일 진행되는 릴레이 동문 멘토링으로 어제 6회차(11/3)가 진행되었으며, 다가오는 7회차(11/10)~10회차(12/1)를 KNUCUBE에서 접수 중입니다.",
+      "isNew": false
     }
   ]
 }

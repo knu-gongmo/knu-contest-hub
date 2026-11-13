@@ -22,15 +22,62 @@ if (QNA_KEY_UNSAFE) console.error("[KNU 스퀘어] config.js에 service_role(비
 const QNA_CONFIGURED = !QNA_KEY_UNSAFE && !!(
   QNA_CFG.supabaseUrl &&
   QNA_CFG.supabaseAnonKey &&
-  /^https:\/\/[a-z0-9-]+\.supabase\.co$/.test(QNA_CFG.supabaseUrl) &&
-  window.supabase &&
-  typeof window.supabase.createClient === "function"
+  /^https:\/\/[a-z0-9-]+\.supabase\.co$/.test(QNA_CFG.supabaseUrl)
 );
-const qnaClient = QNA_CONFIGURED
-  ? window.supabase.createClient(QNA_CFG.supabaseUrl, QNA_CFG.supabaseAnonKey, {
-      auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false }
-    })
-  : null;
+
+// Supabase 는 Q&A 탭을 처음 열 때만 불러온다.
+// (첫 화면에서 바로 불러오면 카카오톡 링크스티커의 '링크 미리보기'가 멈추는 문제가 있었음)
+const QNA_SDK_SRC = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js";
+const QNA_SDK_SRI = "sha384-0w2KAL2YHP6wKOkUDzkCDGgVvfmHnj02DHeQ6XcHOgTfFsGyonKOpShMH1x6nk9o";
+let qnaClient = null;
+let qnaInitPromise = null;
+
+function qnaEnsureClient() {
+  if (!QNA_CONFIGURED) return Promise.resolve(null);
+  if (qnaInitPromise) return qnaInitPromise;
+  qnaInitPromise = new Promise((resolve) => {
+    const start = () => {
+      qnaClient = window.supabase.createClient(QNA_CFG.supabaseUrl, QNA_CFG.supabaseAnonKey, {
+        auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false }
+      });
+      qnaClient.auth.onAuthStateChange((event, session) => {
+        const wasIn = !!qna.session;
+        qna.session = session || null;
+        qna.ready = true;
+        // 콜백 안에서 Supabase를 바로 호출하면 교착될 수 있어 다음 틱에 실행
+        if (session) {
+          qna.step = "email"; qna.authErr = ""; qna.authMsg = "";
+          qnaSavePending("");
+          if (!wasIn || event === "SIGNED_IN") setTimeout(() => qnaLoadPosts().then(qnaRefreshIcons), 0);
+        } else {
+          qna.posts = [];
+          state.qnaPosts = [];
+          setTimeout(qnaLoadStats, 0);
+        }
+        setTimeout(qnaRerender, 0);
+      });
+      resolve(qnaClient);
+    };
+    if (window.supabase && typeof window.supabase.createClient === "function") return start();
+    const s = document.createElement("script");
+    s.src = QNA_SDK_SRC;
+    s.integrity = QNA_SDK_SRI;
+    s.crossOrigin = "anonymous";
+    s.onload = () => {
+      if (window.supabase && typeof window.supabase.createClient === "function") start();
+      else s.onerror();
+    };
+    s.onerror = () => {
+      qnaInitPromise = null;
+      qna.ready = true;
+      qna.loadFailed = true;
+      qnaRerender();
+      resolve(null);
+    };
+    document.head.appendChild(s);
+  });
+  return qnaInitPromise;
+}
 
 const QNA_CATEGORY_LABEL = { team: "팀원 모집", question: "공모전 Q&A", tip: "참가 후기·팁" };
 const QNA_NICK_KEY = "knu_square_nickname_v1";
@@ -193,8 +240,17 @@ function qnaRenderAuthPanel() {
     return;
   }
 
+  if (qna.loadFailed && !qnaClient) {
+    panel.innerHTML = `
+      <div class="flex flex-wrap items-center justify-between gap-2 p-4 rounded-2xl bg-rose-50 border border-rose-200 text-rose-800 text-xs sm:text-sm">
+        <span>게시판을 불러오지 못했습니다. 네트워크를 확인해주세요.</span>
+        <button type="button" data-qna-act="retry-load" class="px-3 py-1.5 rounded-xl bg-white border border-rose-200 font-bold">다시 시도</button>
+      </div>`;
+    return;
+  }
+
   if (!qna.ready) {
-    panel.innerHTML = `<div class="text-xs text-slate-400 py-3">로그인 상태 확인 중…</div>`;
+    panel.innerHTML = `<div class="text-xs text-slate-400 py-3">게시판 불러오는 중…</div>`;
     return;
   }
 
@@ -364,6 +420,9 @@ function renderQnaBoard() {
   const toolbar = document.getElementById("qna-member-tools");
   if (!listEl) return;
 
+  // Q&A 탭이 처음 보일 때 Supabase 를 불러옴
+  if (state.activeTab === "qna" && QNA_CONFIGURED && !qnaClient && !qnaInitPromise) qnaEnsureClient();
+
   qnaRenderAuthPanel();
 
   const member = QNA_CONFIGURED && qna.session && qnaIsKnu();
@@ -489,6 +548,12 @@ async function qnaVerifyCode(token) {
 }
 
 async function qnaAction(act, id) {
+  if (act === "retry-load") {
+    qna.loadFailed = false; qna.ready = false;
+    qnaRerender();
+    qnaEnsureClient();
+    return;
+  }
   if (!qnaClient) return;
   if (act === "logout") {
     await qnaClient.auth.signOut();
@@ -707,28 +772,9 @@ window.addEventListener("DOMContentLoaded", () => {
   const refreshBtn = document.getElementById("qna-refresh-btn");
   if (refreshBtn) refreshBtn.addEventListener("click", () => qnaLoadPosts().then(qnaRefreshIcons));
 
-  if (!qnaClient) {
+  if (!QNA_CONFIGURED) {
     qna.ready = true;
     qnaRerender();
-    return;
   }
-
-  qnaClient.auth.onAuthStateChange((event, session) => {
-    const wasIn = !!qna.session;
-    qna.session = session || null;
-    qna.ready = true;
-    // 콜백 안에서 Supabase를 바로 호출하면 교착될 수 있어 다음 틱에 실행
-    if (session) {
-      qna.step = "email"; qna.authErr = ""; qna.authMsg = "";
-      qnaSavePending("");
-      if (!wasIn || event === "SIGNED_IN") setTimeout(() => qnaLoadPosts().then(qnaRefreshIcons), 0);
-    } else {
-      qna.posts = [];
-      state.qnaPosts = [];
-      setTimeout(qnaLoadStats, 0);
-    }
-    // 콜백 안에서 다른 Supabase 호출이 막히지 않도록 렌더는 다음 틱에
-    setTimeout(qnaRerender, 0);
-  });
-  qnaLoadStats();
+  // 설정돼 있으면 Q&A 탭을 열 때 renderQnaBoard() 가 qnaEnsureClient() 로 불러옴
 });

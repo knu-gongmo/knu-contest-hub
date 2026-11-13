@@ -1,36 +1,9 @@
 {
-  "lastUpdated": "2026-11-12 13:42:52 KST",
-  "referenceToday": "2026-11-12",
-  "totalCount": 33,
-  "newOrUpdatedCount": 0,
+  "lastUpdated": "2026-11-13 12:54:38 KST",
+  "referenceToday": "2026-11-13",
+  "totalCount": 36,
+  "newOrUpdatedCount": 5,
   "items": [
-    {
-      "id": "ai_bootcamp_sjsu_105733",
-      "itemType": "contest",
-      "title": "[AI부트캠프사업단] 2026 글로벌 AI부트캠프 미국 실리콘밸리(산호세주립대 SJSU) 3주 해외연수 모집",
-      "orgId": "bootcamp",
-      "orgName": "로봇·AI·반도체·항공드론 사업단",
-      "subOrg": "경북대 AI부트캠프사업단 (복지관 312호)",
-      "category": "global",
-      "categoryName": "글로벌·대외활동",
-      "postedDate": "2026-10-22",
-      "postedTime": "2026-10-22 14:30",
-      "boardPeriod": "2026-10-22 ~ 2026-11-18",
-      "deadline": "2026-11-12",
-      "deadlineTime": "24:00",
-      "scheduleDetail": "PDF 이메일 접수 ~11.12(목) 24:00 → 면접 11.17(화) → 발표 11.18(수) → 실리콘밸리 파견 '27.01.04~01.22(3주)",
-      "eligibility": "AI부트캠프 중·고급 이수자(또는 2026-2학기 이수 예정자) 중 공인영어성적(TOEIC 750 / OPIc IM2 등) 보유 학부생 10명",
-      "benefit": "미국 산호세주립대(SJSU) 교육비·숙박비·공항이동·실리콘밸리 기업투어·여행자보험 사업단 전액 지원",
-      "url": "https://see.knu.ac.kr/eng/content/board/notice.html?pg=vv&fidx=105733",
-      "tags": [
-        "AI부트캠프",
-        "실리콘밸리해외연수",
-        "11월12일마감",
-        "산호세주립대"
-      ],
-      "summary": "[본문 분석 완료] 2026-10-22 게시(fidx=105733). 본문 2번 항목인 미국 산호세주립대(SJSU) 3주 해외연수(10명 선발)는 11.12(목) 24:00까지 이메일(aibootcamp@knu.ac.kr)로 서류를 접수합니다.",
-      "isNew": false
-    },
     {
       "id": "aerodrone_105721",
       "itemType": "event",
@@ -396,7 +369,7 @@
         "11월23일마감"
       ],
       "summary": "경북대 대학공지 공지 (2026-11-09 게시).",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "knu_main_1338737",
@@ -421,6 +394,82 @@
         "11월23일마감"
       ],
       "summary": "경북대 대학공지 공지 (2026-11-09 게시).",
+      "isNew": false
+    },
+    {
+      "id": "knu_main_1338753",
+      "itemType": "campaign",
+      "title": "학생리포터 1차 전형 합격자 공고",
+      "orgId": "knu_main",
+      "orgName": "대학본부·학생처",
+      "subOrg": "경북대 대학공지",
+      "category": "campaign",
+      "categoryName": "캠페인·서포터즈·봉사",
+      "postedDate": "2026-11-10",
+      "postedTime": "2026-11-10",
+      "boardPeriod": "",
+      "deadline": "2026-11-24",
+      "deadlineTime": "18:00",
+      "scheduleDetail": "등록일(2026-11-10) 기준 안내 공고",
+      "eligibility": "경북대학교 재학생 (상세 요강 원문 참조)",
+      "benefit": "원문 공고문 시상 내역 및 지원 혜택 참조",
+      "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=&btin.bbs_cde=&btin.doc_no=1338753&btin.appl_no=000000&btin.page=/>&btin.search_type=&btin.search_text=&popupDeco=&btin.note_div=row&menu_idx=67",
+      "tags": [
+        "11월24일마감"
+      ],
+      "summary": "경북대 대학공지 공지 (2026-11-10 게시).",
+      "isNew": true
+    },
+    {
+      "id": "knu_main_1338752",
+      "itemType": "campaign",
+      "title": "학생홍보대사 1차 전형 합격자 공고",
+      "orgId": "knu_main",
+      "orgName": "대학본부·학생처",
+      "subOrg": "경북대 대학공지",
+      "category": "campaign",
+      "categoryName": "캠페인·서포터즈·봉사",
+      "postedDate": "2026-11-10",
+      "postedTime": "2026-11-10",
+      "boardPeriod": "",
+      "deadline": "2026-11-24",
+      "deadlineTime": "18:00",
+      "scheduleDetail": "등록일(2026-11-10) 기준 안내 공고",
+      "eligibility": "경북대학교 재학생 (상세 요강 원문 참조)",
+      "benefit": "원문 공고문 시상 내역 및 지원 혜택 참조",
+      "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=&btin.bbs_cde=&btin.doc_no=1338752&btin.appl_no=000000&btin.page=/>&btin.search_type=&btin.search_text=&popupDeco=&btin.note_div=row&menu_idx=67",
+      "tags": [
+        "11월24일마감",
+        "홍보대사"
+      ],
+      "summary": "경북대 대학공지 공지 (2026-11-10 게시).",
+      "isNew": true
+    },
+    {
+      "id": "knu_main_1338757",
+      "itemType": "contest",
+      "title": "[글로벌교육센터][토익]1:1 전화·화상 외국어 프로그램 모집",
+      "orgId": "knu_main",
+      "orgName": "대학본부·학생처",
+      "subOrg": "경북대 대학공지",
+      "category": "global",
+      "categoryName": "글로벌·대외활동",
+      "postedDate": "2026-11-11",
+      "postedTime": "2026-11-11",
+      "boardPeriod": "",
+      "deadline": "2026-11-25",
+      "deadlineTime": "18:00",
+      "scheduleDetail": "등록일(2026-11-11) 기준 안내 공고",
+      "eligibility": "경북대학교 재학생 (상세 요강 원문 참조)",
+      "benefit": "원문 공고문 시상 내역 및 지원 혜택 참조",
+      "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=&btin.bbs_cde=&btin.doc_no=1338757&btin.appl_no=000000&btin.page=/>&btin.search_type=&btin.search_text=&popupDeco=&btin.note_div=row&menu_idx=67",
+      "tags": [
+        "글로벌교육센터",
+        "토익",
+        "11월25일마감",
+        "글로벌"
+      ],
+      "summary": "경북대 대학공지 공지 (2026-11-11 게시).",
       "isNew": true
     },
     {
@@ -881,6 +930,33 @@
       ],
       "summary": "[본문 분석 완료] 2026-11-03 게시(fidx=105800). 신청서 이메일(rlinc11@knu.ac.kr) 접수는 11.11(수) 마감이며, 11.13 예선, 11.26 본선 발표 및 시상식이 크리에이티브파크에서 열립니다.",
       "isNew": true
+    },
+    {
+      "id": "ai_bootcamp_sjsu_105733",
+      "itemType": "contest",
+      "title": "[AI부트캠프사업단] 2026 글로벌 AI부트캠프 미국 실리콘밸리(산호세주립대 SJSU) 3주 해외연수 모집",
+      "orgId": "bootcamp",
+      "orgName": "로봇·AI·반도체·항공드론 사업단",
+      "subOrg": "경북대 AI부트캠프사업단 (복지관 312호)",
+      "category": "global",
+      "categoryName": "글로벌·대외활동",
+      "postedDate": "2026-10-22",
+      "postedTime": "2026-10-22 14:30",
+      "boardPeriod": "2026-10-22 ~ 2026-11-18",
+      "deadline": "2026-11-12",
+      "deadlineTime": "24:00",
+      "scheduleDetail": "PDF 이메일 접수 ~11.12(목) 24:00 → 면접 11.17(화) → 발표 11.18(수) → 실리콘밸리 파견 '27.01.04~01.22(3주)",
+      "eligibility": "AI부트캠프 중·고급 이수자(또는 2026-2학기 이수 예정자) 중 공인영어성적(TOEIC 750 / OPIc IM2 등) 보유 학부생 10명",
+      "benefit": "미국 산호세주립대(SJSU) 교육비·숙박비·공항이동·실리콘밸리 기업투어·여행자보험 사업단 전액 지원",
+      "url": "https://see.knu.ac.kr/eng/content/board/notice.html?pg=vv&fidx=105733",
+      "tags": [
+        "AI부트캠프",
+        "실리콘밸리해외연수",
+        "11월12일마감",
+        "산호세주립대"
+      ],
+      "summary": "[본문 분석 완료] 2026-10-22 게시(fidx=105733). 본문 2번 항목인 미국 산호세주립대(SJSU) 3주 해외연수(10명 선발)는 11.12(목) 24:00까지 이메일(aibootcamp@knu.ac.kr)로 서류를 접수합니다.",
+      "isNew": false
     }
   ]
 }

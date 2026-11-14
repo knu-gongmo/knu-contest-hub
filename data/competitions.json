@@ -1,63 +1,9 @@
 {
-  "lastUpdated": "2026-11-13 12:54:38 KST",
-  "referenceToday": "2026-11-13",
+  "lastUpdated": "2026-11-14 12:53:17 KST",
+  "referenceToday": "2026-11-14",
   "totalCount": 36,
-  "newOrUpdatedCount": 5,
+  "newOrUpdatedCount": 0,
   "items": [
-    {
-      "id": "aerodrone_105721",
-      "itemType": "event",
-      "title": "[항공드론 혁신융합대학사업단] 2026 항공·우주 산업현장(니어스랩·파블로항공·심투리얼) 직무 탐색",
-      "orgId": "bootcamp",
-      "orgName": "로봇·AI·반도체·항공드론 사업단",
-      "subOrg": "경북대 항공드론 혁신융합대학사업단 (053-950-2893)",
-      "category": "event",
-      "categoryName": "교내행사·특강·페스티벌",
-      "postedDate": "2026-10-20",
-      "postedTime": "2026-10-20 14:00",
-      "boardPeriod": "2026-10-20 ~ 2026-11-13",
-      "deadline": "2026-11-13",
-      "deadlineTime": "18:30",
-      "scheduleDetail": "사전모집 10.21~10.28(20명 선발 완료) → 산업현장 방문 본 행사: 2026.11.13(금) 09:00~18:30 (대전 일대)",
-      "eligibility": "경북대학교 학부 재학생 (전공 무관, 20명 내외)",
-      "benefit": "대전 니어스랩·파블로항공 R&D센터·심투리얼 연구소 투어 및 현직자 세미나, 왕복 버스·식사·보험 전액 지원",
-      "url": "https://see.knu.ac.kr/mobile/content/notice.html?fidx=105721",
-      "tags": [
-        "항공드론사업단",
-        "파블로항공·니어스랩",
-        "11월13일현장탐방",
-        "전공무관"
-      ],
-      "summary": "[본문 분석 완료] 2026-10-20 게시(fidx=105721). 사전 네이버폼 모집(10.21~10.28)을 거쳐 11.13(금) 09:00~18:30 대전 니어스랩·파블로항공 R&D센터·심투리얼 현장 직무 탐색이 진행됩니다.",
-      "isNew": false
-    },
-    {
-      "id": "see_venture_105810",
-      "itemType": "contest",
-      "title": "[IT대학·창업] 2026 KNU 벤처 메이커스 (기업가 정신 및 창의력 강화캠프) 참가 학생 모집",
-      "orgId": "it_college",
-      "orgName": "IT대학 (전자공학부·컴퓨터학부)",
-      "subOrg": "IT대학 전자공학부 · 산학협력단 (작성자: 백영경)",
-      "category": "startup",
-      "categoryName": "창업·아이디어",
-      "postedDate": "2026-11-04",
-      "postedTime": "2026-11-04 13:20",
-      "boardPeriod": "2026-11-04 ~ 2026-11-15",
-      "deadline": "2026-11-13",
-      "deadlineTime": "18:00",
-      "scheduleDetail": "공고 등록 2026.11.04(수) → 참가 학생 모집 ~11.13(금) 18:00",
-      "eligibility": "IT대학 및 창업·아이디어 구체화에 관심 있는 경북대학교 재학생",
-      "benefit": "기업가 정신 및 창의적 문제해결 집중 캠프 전액 지원, 우수팀 시상",
-      "url": "https://see.knu.ac.kr/mobile/content/notice.html?fidx=105810",
-      "tags": [
-        "오늘게시",
-        "KNU벤처메이커스",
-        "창의력강화캠프",
-        "IT대학"
-      ],
-      "summary": "[본문 분석 완료] 오늘(2026-11-04) IT대학 전자공학부 공지사항(fidx=105810)에 신규 등록된 기업가 정신 및 창의력 강화캠프 참가자 모집 공고입니다.",
-      "isNew": true
-    },
     {
       "id": "datainst_685",
       "itemType": "contest",
@@ -957,6 +903,60 @@
       ],
       "summary": "[본문 분석 완료] 2026-10-22 게시(fidx=105733). 본문 2번 항목인 미국 산호세주립대(SJSU) 3주 해외연수(10명 선발)는 11.12(목) 24:00까지 이메일(aibootcamp@knu.ac.kr)로 서류를 접수합니다.",
       "isNew": false
+    },
+    {
+      "id": "aerodrone_105721",
+      "itemType": "event",
+      "title": "[항공드론 혁신융합대학사업단] 2026 항공·우주 산업현장(니어스랩·파블로항공·심투리얼) 직무 탐색",
+      "orgId": "bootcamp",
+      "orgName": "로봇·AI·반도체·항공드론 사업단",
+      "subOrg": "경북대 항공드론 혁신융합대학사업단 (053-950-2893)",
+      "category": "event",
+      "categoryName": "교내행사·특강·페스티벌",
+      "postedDate": "2026-10-20",
+      "postedTime": "2026-10-20 14:00",
+      "boardPeriod": "2026-10-20 ~ 2026-11-13",
+      "deadline": "2026-11-13",
+      "deadlineTime": "18:30",
+      "scheduleDetail": "사전모집 10.21~10.28(20명 선발 완료) → 산업현장 방문 본 행사: 2026.11.13(금) 09:00~18:30 (대전 일대)",
+      "eligibility": "경북대학교 학부 재학생 (전공 무관, 20명 내외)",
+      "benefit": "대전 니어스랩·파블로항공 R&D센터·심투리얼 연구소 투어 및 현직자 세미나, 왕복 버스·식사·보험 전액 지원",
+      "url": "https://see.knu.ac.kr/mobile/content/notice.html?fidx=105721",
+      "tags": [
+        "항공드론사업단",
+        "파블로항공·니어스랩",
+        "11월13일현장탐방",
+        "전공무관"
+      ],
+      "summary": "[본문 분석 완료] 2026-10-20 게시(fidx=105721). 사전 네이버폼 모집(10.21~10.28)을 거쳐 11.13(금) 09:00~18:30 대전 니어스랩·파블로항공 R&D센터·심투리얼 현장 직무 탐색이 진행됩니다.",
+      "isNew": false
+    },
+    {
+      "id": "see_venture_105810",
+      "itemType": "contest",
+      "title": "[IT대학·창업] 2026 KNU 벤처 메이커스 (기업가 정신 및 창의력 강화캠프) 참가 학생 모집",
+      "orgId": "it_college",
+      "orgName": "IT대학 (전자공학부·컴퓨터학부)",
+      "subOrg": "IT대학 전자공학부 · 산학협력단 (작성자: 백영경)",
+      "category": "startup",
+      "categoryName": "창업·아이디어",
+      "postedDate": "2026-11-04",
+      "postedTime": "2026-11-04 13:20",
+      "boardPeriod": "2026-11-04 ~ 2026-11-15",
+      "deadline": "2026-11-13",
+      "deadlineTime": "18:00",
+      "scheduleDetail": "공고 등록 2026.11.04(수) → 참가 학생 모집 ~11.13(금) 18:00",
+      "eligibility": "IT대학 및 창업·아이디어 구체화에 관심 있는 경북대학교 재학생",
+      "benefit": "기업가 정신 및 창의적 문제해결 집중 캠프 전액 지원, 우수팀 시상",
+      "url": "https://see.knu.ac.kr/mobile/content/notice.html?fidx=105810",
+      "tags": [
+        "오늘게시",
+        "KNU벤처메이커스",
+        "창의력강화캠프",
+        "IT대학"
+      ],
+      "summary": "[본문 분석 완료] 오늘(2026-11-04) IT대학 전자공학부 공지사항(fidx=105810)에 신규 등록된 기업가 정신 및 창의력 강화캠프 참가자 모집 공고입니다.",
+      "isNew": true
     }
   ]
 }

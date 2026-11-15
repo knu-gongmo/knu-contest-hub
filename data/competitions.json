@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-11-14 12:53:17 KST",
-  "referenceToday": "2026-11-14",
+  "lastUpdated": "2026-11-15 12:35:16 KST",
+  "referenceToday": "2026-11-15",
   "totalCount": 36,
-  "newOrUpdatedCount": 0,
+  "newOrUpdatedCount": 2,
   "items": [
     {
       "id": "datainst_685",
@@ -364,7 +364,7 @@
         "11월24일마감"
       ],
       "summary": "경북대 대학공지 공지 (2026-11-10 게시).",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "knu_main_1338752",
@@ -416,7 +416,7 @@
         "글로벌"
       ],
       "summary": "경북대 대학공지 공지 (2026-11-11 게시).",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "startup_noti2_455",

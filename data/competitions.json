@@ -1,36 +1,9 @@
 {
-  "lastUpdated": "2026-11-15 12:35:16 KST",
-  "referenceToday": "2026-11-15",
-  "totalCount": 36,
+  "lastUpdated": "2026-11-16 12:35:11 KST",
+  "referenceToday": "2026-11-16",
+  "totalCount": 37,
   "newOrUpdatedCount": 2,
   "items": [
-    {
-      "id": "datainst_685",
-      "itemType": "contest",
-      "title": "[대구앵커사업단] 「2026 대구 대학(원)생 AI 드래프톤」 참가팀 모집 (총 50팀)",
-      "orgId": "datainst",
-      "orgName": "데이터융복합·사업단",
-      "subOrg": "대구테크노파크 대구앵커센터 · 대구앵커사업단",
-      "category": "hackathon",
-      "categoryName": "해커톤·AI·SW",
-      "postedDate": "2026-10-29",
-      "postedTime": "2026-10-29 10:31",
-      "boardPeriod": "2026-10-29 ~ 2026-11-18",
-      "deadline": "2026-11-15",
-      "deadlineTime": "23:59",
-      "scheduleDetail": "접수 ~11.15(일) → 참가팀 발표 11.17(화) → 본선 대회 11.25(수)~11.26(목) 대구 엑스코",
-      "eligibility": "전국 대학생 및 대학원생 (휴학생 포함, 3~4인 1팀, 총 50팀 모집)",
-      "benefit": "대상 500만원, 최우수상 200만원, 우수상 100만원, 장려상 각 50만원 (대구시 정책 반영)",
-      "url": "https://knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=1&btin.bbs_cde=1&btin.doc_no=1338677&btin.appl_no=000000&menu_idx=67",
-      "tags": [
-        "AI드래프톤",
-        "대상500만원",
-        "11월15일마감",
-        "엑스코본선"
-      ],
-      "summary": "[본문 분석 완료] 2026-10-29 10:31 게시(doc_no=1338677). AI 기반 대구시 정책 아이디어 발굴 해커톤으로 11.15(일)까지 접수하며, 11.17(화) 합격 발표 후 11.25~26 엑스코에서 개최됩니다.",
-      "isNew": false
-    },
     {
       "id": "swedu_talk_2026",
       "itemType": "event",
@@ -417,6 +390,32 @@
       ],
       "summary": "경북대 대학공지 공지 (2026-11-11 게시).",
       "isNew": false
+    },
+    {
+      "id": "knu_main_1338777",
+      "itemType": "contest",
+      "title": "2027년도 제10기 유하푸른재단 장학생 선발 안내",
+      "orgId": "knu_main",
+      "orgName": "대학본부·학생처",
+      "subOrg": "경북대 대학공지",
+      "category": "research",
+      "categoryName": "연구·장학·학술",
+      "postedDate": "2026-11-16",
+      "postedTime": "2026-11-16",
+      "boardPeriod": "",
+      "deadline": "2026-11-30",
+      "deadlineTime": "18:00",
+      "scheduleDetail": "등록일(2026-11-16) 기준 안내 공고",
+      "eligibility": "경북대학교 재학생 (상세 요강 원문 참조)",
+      "benefit": "원문 공고문 시상 내역 및 지원 혜택 참조",
+      "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=&btin.bbs_cde=&btin.doc_no=1338777&btin.appl_no=000000&btin.page=/>&btin.search_type=&btin.search_text=&popupDeco=&btin.note_div=row&menu_idx=67",
+      "tags": [
+        "오늘게시",
+        "11월30일마감",
+        "장학"
+      ],
+      "summary": "경북대 대학공지 공지 (2026-11-16 게시).",
+      "isNew": true
     },
     {
       "id": "startup_noti2_455",
@@ -957,6 +956,33 @@
       ],
       "summary": "[본문 분석 완료] 오늘(2026-11-04) IT대학 전자공학부 공지사항(fidx=105810)에 신규 등록된 기업가 정신 및 창의력 강화캠프 참가자 모집 공고입니다.",
       "isNew": true
+    },
+    {
+      "id": "datainst_685",
+      "itemType": "contest",
+      "title": "[대구앵커사업단] 「2026 대구 대학(원)생 AI 드래프톤」 참가팀 모집 (총 50팀)",
+      "orgId": "datainst",
+      "orgName": "데이터융복합·사업단",
+      "subOrg": "대구테크노파크 대구앵커센터 · 대구앵커사업단",
+      "category": "hackathon",
+      "categoryName": "해커톤·AI·SW",
+      "postedDate": "2026-10-29",
+      "postedTime": "2026-10-29 10:31",
+      "boardPeriod": "2026-10-29 ~ 2026-11-18",
+      "deadline": "2026-11-15",
+      "deadlineTime": "23:59",
+      "scheduleDetail": "접수 ~11.15(일) → 참가팀 발표 11.17(화) → 본선 대회 11.25(수)~11.26(목) 대구 엑스코",
+      "eligibility": "전국 대학생 및 대학원생 (휴학생 포함, 3~4인 1팀, 총 50팀 모집)",
+      "benefit": "대상 500만원, 최우수상 200만원, 우수상 100만원, 장려상 각 50만원 (대구시 정책 반영)",
+      "url": "https://knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=1&btin.bbs_cde=1&btin.doc_no=1338677&btin.appl_no=000000&menu_idx=67",
+      "tags": [
+        "AI드래프톤",
+        "대상500만원",
+        "11월15일마감",
+        "엑스코본선"
+      ],
+      "summary": "[본문 분석 완료] 2026-10-29 10:31 게시(doc_no=1338677). AI 기반 대구시 정책 아이디어 발굴 해커톤으로 11.15(일)까지 접수하며, 11.17(화) 합격 발표 후 11.25~26 엑스코에서 개최됩니다.",
+      "isNew": false
     }
   ]
 }

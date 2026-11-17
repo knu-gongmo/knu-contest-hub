@@ -1,36 +1,9 @@
 {
-  "lastUpdated": "2026-11-16 12:35:11 KST",
-  "referenceToday": "2026-11-16",
-  "totalCount": 37,
-  "newOrUpdatedCount": 2,
+  "lastUpdated": "2026-11-17 14:32:13 KST",
+  "referenceToday": "2026-11-17",
+  "totalCount": 39,
+  "newOrUpdatedCount": 3,
   "items": [
-    {
-      "id": "swedu_talk_2026",
-      "itemType": "event",
-      "title": "[진로취업과·대학원혁신] 이차전지 · 조선 · 방산 분야 실시간 직무교육 특강 (학부생 가능)",
-      "orgId": "knucube",
-      "orgName": "진로취업·도서관·CUBE",
-      "subOrg": "진로취업과 (053-950-2872)",
-      "category": "event",
-      "categoryName": "교내행사·특강·페스티벌",
-      "postedDate": "2026-11-02",
-      "postedTime": "2026-11-02 11:22",
-      "boardPeriod": "2026-11-02 ~ 2026-11-27",
-      "deadline": "2026-11-16",
-      "deadlineTime": "19:00",
-      "scheduleDetail": "이차전지 트랙: 11.16(월)~11.20(금) 19:00~22:00 / 조선·방산 트랙: 11.23(월)~11.27(금) 19:00~22:00",
-      "eligibility": "경북대 대학원생 및 학부생 누구나 수강 가능 (온라인 실시간 Zoom)",
-      "benefit": "이차전지·조선·방산 산업현황, 기술동향, 기업이슈 및 실전 직무이해 집중 특강",
-      "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=1&btin.bbs_cde=1&btin.doc_no=1338695&btin.appl_no=000000&menu_idx=67",
-      "tags": [
-        "이차전지직무특강",
-        "조선방산특강",
-        "학부생수강가능",
-        "11월16일개강"
-      ],
-      "summary": "[본문 분석 완료] 2026-11-02 11:22 게시(doc_no=1338695). 본문 첫 줄에 '학부생도 수강가능합니다'가 명시되어 있으며, 11.16~20(이차전지), 11.23~27(조선방산) 야간 실시간 Zoom으로 진행됩니다.",
-      "isNew": true
-    },
     {
       "id": "knu_main_1338708",
       "itemType": "contest",
@@ -410,9 +383,58 @@
       "benefit": "원문 공고문 시상 내역 및 지원 혜택 참조",
       "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=&btin.bbs_cde=&btin.doc_no=1338777&btin.appl_no=000000&btin.page=/>&btin.search_type=&btin.search_text=&popupDeco=&btin.note_div=row&menu_idx=67",
       "tags": [
-        "오늘게시",
         "11월30일마감",
         "장학"
+      ],
+      "summary": "경북대 대학공지 공지 (2026-11-16 게시).",
+      "isNew": true
+    },
+    {
+      "id": "knu_main_1338782",
+      "itemType": "contest",
+      "title": "한국고등교육재단 문우림 제6기 장학생 모집 안내",
+      "orgId": "knu_main",
+      "orgName": "대학본부·학생처",
+      "subOrg": "경북대 대학공지",
+      "category": "research",
+      "categoryName": "연구·장학·학술",
+      "postedDate": "2026-11-16",
+      "postedTime": "2026-11-16",
+      "boardPeriod": "",
+      "deadline": "2026-11-30",
+      "deadlineTime": "18:00",
+      "scheduleDetail": "등록일(2026-11-16) 기준 안내 공고",
+      "eligibility": "경북대학교 재학생 (상세 요강 원문 참조)",
+      "benefit": "원문 공고문 시상 내역 및 지원 혜택 참조",
+      "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=&btin.bbs_cde=&btin.doc_no=1338782&btin.appl_no=000000&btin.page=/>&btin.search_type=&btin.search_text=&popupDeco=&btin.note_div=row&menu_idx=67",
+      "tags": [
+        "11월30일마감",
+        "장학"
+      ],
+      "summary": "경북대 대학공지 공지 (2026-11-16 게시).",
+      "isNew": true
+    },
+    {
+      "id": "knu_main_1338779",
+      "itemType": "contest",
+      "title": "[교수학습센터]2026학년도 MY CTL 리워드 모집 안내",
+      "orgId": "knu_main",
+      "orgName": "대학본부·학생처",
+      "subOrg": "경북대 대학공지",
+      "category": "global",
+      "categoryName": "글로벌·대외활동",
+      "postedDate": "2026-11-16",
+      "postedTime": "2026-11-16",
+      "boardPeriod": "",
+      "deadline": "2026-11-30",
+      "deadlineTime": "18:00",
+      "scheduleDetail": "등록일(2026-11-16) 기준 안내 공고",
+      "eligibility": "경북대학교 재학생 (상세 요강 원문 참조)",
+      "benefit": "원문 공고문 시상 내역 및 지원 혜택 참조",
+      "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=&btin.bbs_cde=&btin.doc_no=1338779&btin.appl_no=000000&btin.page=/>&btin.search_type=&btin.search_text=&popupDeco=&btin.note_div=row&menu_idx=67",
+      "tags": [
+        "교수학습센터",
+        "11월30일마감"
       ],
       "summary": "경북대 대학공지 공지 (2026-11-16 게시).",
       "isNew": true
@@ -983,6 +1005,33 @@
       ],
       "summary": "[본문 분석 완료] 2026-10-29 10:31 게시(doc_no=1338677). AI 기반 대구시 정책 아이디어 발굴 해커톤으로 11.15(일)까지 접수하며, 11.17(화) 합격 발표 후 11.25~26 엑스코에서 개최됩니다.",
       "isNew": false
+    },
+    {
+      "id": "swedu_talk_2026",
+      "itemType": "event",
+      "title": "[진로취업과·대학원혁신] 이차전지 · 조선 · 방산 분야 실시간 직무교육 특강 (학부생 가능)",
+      "orgId": "knucube",
+      "orgName": "진로취업·도서관·CUBE",
+      "subOrg": "진로취업과 (053-950-2872)",
+      "category": "event",
+      "categoryName": "교내행사·특강·페스티벌",
+      "postedDate": "2026-11-02",
+      "postedTime": "2026-11-02 11:22",
+      "boardPeriod": "2026-11-02 ~ 2026-11-27",
+      "deadline": "2026-11-16",
+      "deadlineTime": "19:00",
+      "scheduleDetail": "이차전지 트랙: 11.16(월)~11.20(금) 19:00~22:00 / 조선·방산 트랙: 11.23(월)~11.27(금) 19:00~22:00",
+      "eligibility": "경북대 대학원생 및 학부생 누구나 수강 가능 (온라인 실시간 Zoom)",
+      "benefit": "이차전지·조선·방산 산업현황, 기술동향, 기업이슈 및 실전 직무이해 집중 특강",
+      "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=1&btin.bbs_cde=1&btin.doc_no=1338695&btin.appl_no=000000&menu_idx=67",
+      "tags": [
+        "이차전지직무특강",
+        "조선방산특강",
+        "학부생수강가능",
+        "11월16일개강"
+      ],
+      "summary": "[본문 분석 완료] 2026-11-02 11:22 게시(doc_no=1338695). 본문 첫 줄에 '학부생도 수강가능합니다'가 명시되어 있으며, 11.16~20(이차전지), 11.23~27(조선방산) 야간 실시간 Zoom으로 진행됩니다.",
+      "isNew": true
     }
   ]
 }

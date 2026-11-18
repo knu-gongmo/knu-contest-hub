@@ -1,34 +1,9 @@
 {
-  "lastUpdated": "2026-11-17 14:32:13 KST",
-  "referenceToday": "2026-11-17",
+  "lastUpdated": "2026-11-18 13:57:52 KST",
+  "referenceToday": "2026-11-18",
   "totalCount": 39,
-  "newOrUpdatedCount": 3,
+  "newOrUpdatedCount": 0,
   "items": [
-    {
-      "id": "knu_main_1338708",
-      "itemType": "contest",
-      "title": "2027학년도 관정재단 장학생(학부생) 선발 안내_26.11.20.(금) 18:00",
-      "orgId": "knu_main",
-      "orgName": "대학본부·학생처",
-      "subOrg": "경북대 대학공지",
-      "category": "research",
-      "categoryName": "연구·장학·학술",
-      "postedDate": "2026-11-03",
-      "postedTime": "2026-11-03",
-      "boardPeriod": "",
-      "deadline": "2026-11-17",
-      "deadlineTime": "18:00",
-      "scheduleDetail": "등록일(2026-11-03) 기준 안내 공고",
-      "eligibility": "경북대학교 재학생 (상세 요강 원문 참조)",
-      "benefit": "원문 공고문 시상 내역 및 지원 혜택 참조",
-      "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=&btin.bbs_cde=&btin.doc_no=1338708&btin.appl_no=000000&btin.page=/>&btin.search_type=&btin.search_text=&popupDeco=&btin.note_div=row&menu_idx=67",
-      "tags": [
-        "11월17일마감",
-        "장학"
-      ],
-      "summary": "경북대 대학공지 공지 (2026-11-03 게시).",
-      "isNew": false
-    },
     {
       "id": "aerodrone_coshow_105348",
       "itemType": "event",
@@ -1032,6 +1007,31 @@
       ],
       "summary": "[본문 분석 완료] 2026-11-02 11:22 게시(doc_no=1338695). 본문 첫 줄에 '학부생도 수강가능합니다'가 명시되어 있으며, 11.16~20(이차전지), 11.23~27(조선방산) 야간 실시간 Zoom으로 진행됩니다.",
       "isNew": true
+    },
+    {
+      "id": "knu_main_1338708",
+      "itemType": "contest",
+      "title": "2027학년도 관정재단 장학생(학부생) 선발 안내_26.11.20.(금) 18:00",
+      "orgId": "knu_main",
+      "orgName": "대학본부·학생처",
+      "subOrg": "경북대 대학공지",
+      "category": "research",
+      "categoryName": "연구·장학·학술",
+      "postedDate": "2026-11-03",
+      "postedTime": "2026-11-03",
+      "boardPeriod": "",
+      "deadline": "2026-11-17",
+      "deadlineTime": "18:00",
+      "scheduleDetail": "등록일(2026-11-03) 기준 안내 공고",
+      "eligibility": "경북대학교 재학생 (상세 요강 원문 참조)",
+      "benefit": "원문 공고문 시상 내역 및 지원 혜택 참조",
+      "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=&btin.bbs_cde=&btin.doc_no=1338708&btin.appl_no=000000&btin.page=/>&btin.search_type=&btin.search_text=&popupDeco=&btin.note_div=row&menu_idx=67",
+      "tags": [
+        "11월17일마감",
+        "장학"
+      ],
+      "summary": "경북대 대학공지 공지 (2026-11-03 게시).",
+      "isNew": false
     }
   ]
 }

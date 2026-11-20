@@ -1,33 +1,9 @@
 {
-  "lastUpdated": "2026-11-19 13:52:20 KST",
-  "referenceToday": "2026-11-19",
+  "lastUpdated": "2026-11-20 13:41:58 KST",
+  "referenceToday": "2026-11-20",
   "totalCount": 39,
-  "newOrUpdatedCount": 1,
+  "newOrUpdatedCount": 0,
   "items": [
-    {
-      "id": "knu_main_1338722",
-      "itemType": "contest",
-      "title": "2027학년도 IBEC 비학위과정(공개강좌) 3기 신입생 모집 안내",
-      "orgId": "knu_main",
-      "orgName": "대학본부·학생처",
-      "subOrg": "경북대 대학공지",
-      "category": "global",
-      "categoryName": "글로벌·대외활동",
-      "postedDate": "2026-11-05",
-      "postedTime": "2026-11-05",
-      "boardPeriod": "",
-      "deadline": "2026-11-19",
-      "deadlineTime": "18:00",
-      "scheduleDetail": "등록일(2026-11-05) 기준 안내 공고",
-      "eligibility": "경북대학교 재학생 (상세 요강 원문 참조)",
-      "benefit": "원문 공고문 시상 내역 및 지원 혜택 참조",
-      "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=&btin.bbs_cde=&btin.doc_no=1338722&btin.appl_no=000000&btin.page=/>&btin.search_type=&btin.search_text=&popupDeco=&btin.note_div=row&menu_idx=67",
-      "tags": [
-        "11월19일마감"
-      ],
-      "summary": "경북대 대학공지 공지 (2026-11-05 게시).",
-      "isNew": false
-    },
     {
       "id": "robot_bootcamp_2026",
       "itemType": "contest",
@@ -1031,6 +1007,30 @@
         "옴부즈맨"
       ],
       "summary": "경북대 대학공지 공지 (2026-11-04 게시).",
+      "isNew": false
+    },
+    {
+      "id": "knu_main_1338722",
+      "itemType": "contest",
+      "title": "2027학년도 IBEC 비학위과정(공개강좌) 3기 신입생 모집 안내",
+      "orgId": "knu_main",
+      "orgName": "대학본부·학생처",
+      "subOrg": "경북대 대학공지",
+      "category": "global",
+      "categoryName": "글로벌·대외활동",
+      "postedDate": "2026-11-05",
+      "postedTime": "2026-11-05",
+      "boardPeriod": "",
+      "deadline": "2026-11-19",
+      "deadlineTime": "18:00",
+      "scheduleDetail": "등록일(2026-11-05) 기준 안내 공고",
+      "eligibility": "경북대학교 재학생 (상세 요강 원문 참조)",
+      "benefit": "원문 공고문 시상 내역 및 지원 혜택 참조",
+      "url": "https://www.knu.ac.kr/wbbs/wbbs/bbs/btin/viewBtin.action?bbs_cde=&btin.bbs_cde=&btin.doc_no=1338722&btin.appl_no=000000&btin.page=/>&btin.search_type=&btin.search_text=&popupDeco=&btin.note_div=row&menu_idx=67",
+      "tags": [
+        "11월19일마감"
+      ],
+      "summary": "경북대 대학공지 공지 (2026-11-05 게시).",
       "isNew": false
     }
   ]
